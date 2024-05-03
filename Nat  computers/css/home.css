@@ -1,0 +1,221 @@
+
+*{ 
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: black;
+    color: white;
+ 
+}
+nav{
+    width: 100%; 
+    height: 100px;
+    background-color: rgba(192, 192, 192, 1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(0, 195, 255); 
+    
+}
+nav .logoimg{
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    position: absolute;
+ }
+nav .ulone{
+    display: none;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+ }
+ nav .ulone li{
+    list-style: none;
+ }
+ nav .ulone li #active img{
+    opacity: 1;
+    background-color: rgb(165, 163, 163);
+    border-radius: 50%;
+ }
+ 
+ nav .ulone li a img{
+    width: 40px;
+    opacity: .6;
+ }
+nav .ultwo{ 
+display: flex;
+gap: 60px;
+margin-right: 70px;
+}
+nav .ultwo li{
+    list-style: none;
+}
+nav .ultwo li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+}
+nav .ultwo li a:hover{
+    text-decoration: underline;
+
+}
+#active{
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.home-container{ 
+    width: 100%;
+    height: auto; 
+    animation: home-text 1s;
+}
+h1{
+    font-size: 45px;
+    color: rgba(0, 209, 255, 1);
+    text-align: center;
+    margin: 20px 0px;
+    animation: welcome 1s;
+}
+@keyframes welcome{
+    from{
+        transform: translateY(-300px);
+        color: rgba(192, 192, 192, 1);;
+    }
+}
+.home-container p{
+    font-size: 20px;
+    text-align: start;
+}
+@keyframes home-text{
+    from{
+        transform: translateX(-400px);
+    }
+}
+.home-container p span{
+    color: rgba(0, 209, 255, 1);
+}
+.container{
+    display: flex;   
+    justify-content: center; 
+    align-items: center;
+} 
+.container  .dark-computer{
+    width: 700px;
+    animation: computer 1s;
+}
+@keyframes computer{
+    from{
+        transform: translateY(400px);
+    }
+}
+.container .home-container span{
+    color: rgba(0, 200, 244, 1);
+}
+.container .home-container h2{
+    color: red;
+}
+ a button{
+    width: 150px;
+    height: 59px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgba(0, 207, 253, 1);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: vist 1s;
+}
+@keyframes vist{
+    from{ 
+        transform: scale(.3);
+        transform: translateX(300px);
+         }
+}
+
+.container  button:hover{
+    background-color: black;
+    border: 2px solid red;
+    color: rgba(0, 207, 253, 1);
+    transition-duration: 1s;
+    transition-property: initial;
+    transition-delay: inherit;
+}
+ a button img{
+    width: 30px;
+}
+ a{
+    text-decoration: none;
+}
+@media (max-width: 1050px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px) {
+    nav .logoimg {
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+        position: absolute;
+        left: 0;
+    }
+    nav .ulone{
+        display: flex;
+    }
+    nav .ultwo{
+        display: none;
+    }
+     nav .ulone{
+        gap: 40px;
+     }
+    h1 {
+        font-size: 30px;
+    }
+
+    .dark-computer {
+        width: 100%;
+    }
+
+    .home-container {
+        width: 50%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home-container p {
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 400px){
+    nav .logoimg{
+        width: 30px;
+        height: 30px;
+        
+    }
+    nav .ulone{
+        gap: 30px;
+    }
+    nav .ulone li a img{
+        width: 20px;
+
+    }
+}

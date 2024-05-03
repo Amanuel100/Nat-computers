@@ -1,0 +1,232 @@
+ 
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(192, 192, 192, 1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(0, 195, 255);
+    position: sticky;
+    top: 0;
+}
+
+nav .logoimg {
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    position: absolute;
+}
+nav .ulone {
+    display: none;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+nav .ulone li {
+    list-style: none;
+}
+
+nav .ulone li #active img {
+    opacity: 1;
+    background-color: rgb(165, 163, 163);
+    border-radius: 50%;
+}
+
+nav .ulone li a img {
+    width: 40px;
+    opacity: .6;
+}
+nav .ultwo {
+    display: flex;
+    gap: 60px;
+    margin-right: 40px;
+}
+
+nav .ultwo li {
+    list-style: none;
+}
+
+nav .ultwo li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+}
+
+nav .ultwo li a:hover {
+    text-decoration: underline;
+
+}
+
+#active {
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 30px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+     bottom: 0;
+    width: 100%;
+}
+footer .contact-container div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+} 
+footer .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    animation: icon 1s;
+}
+footer .contact-container img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+@keyframes icon{
+    from{
+        transform: translateX(500px);
+    }
+}
+footer .contact-container div a img{
+    width: 100px;
+    opacity: .8;
+}
+ 
+ .contact-us-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+ .contact-us-text .buy p{
+    font-size: 30px;
+    color: rgb(2, 247, 247);
+    animation: contact-page-p 1s;
+ }
+ @keyframes contact-page-p{
+    from{
+        transform: translateX(-400px);
+    }
+ }
+ .contact-us-text .buy p span{
+    color: blue;
+ }
+ .contact-us-text .cup{
+    width: 100%;
+  }
+  .contact-us-text .cup img{
+    width: 400px;
+    margin-top: 50px; 
+    animation: cup 1s;
+  }
+  @keyframes cup{
+    from{
+        transform: translateX(300px);
+        transform: scale(.2);
+    }
+  }
+   nav .ulone li #active img {
+       opacity: 1;
+       background-color: rgb(165, 163, 163);
+       border-radius: 50%;
+   }
+  @media (max-width: 700px) {
+      nav .logoimg {
+          width: 50px;
+          height: 50px;
+          margin-top: 30px;
+          position: absolute;
+          left: 0;
+      }
+   .cup img{
+    width: 200px;
+   }
+      nav .ulone {
+          display: flex;
+      }
+
+      nav .ultwo {
+          display: none;
+      }
+
+      nav .ulone {
+          gap: 40px;
+   
+     }
+     .contact-us-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+     .contact-us-text .buy p{
+        font-size: 20px;
+     }
+     .contact-container .cup{
+        width: 100%;
+     }
+     footer .contact-container div a img{
+        width: 40px;
+        height: 40px;
+     }
+     footer .contact-container div{
+        width: 80px;
+     }
+     footer .contact-container{
+        gap: 20px;
+     }
+  }
+  @media (max-width: 400px) {
+      nav .logoimg {
+          width: 30px;
+          height: 30px;
+
+      }
+      .cup img{
+        width: 200px;
+      }
+
+      nav .ulone {
+          gap: 30px;
+      }
+
+      nav .ulone li a img {
+          width: 20px;
+
+      }
+  }
+  
